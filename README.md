@@ -80,4 +80,17 @@ Navigate to [`http://localhost:3000`](http://localhost:3000)
 ![mock image 2](https://cdn.discordapp.com/attachments/703574209904771162/982770344676966430/20220604_161802.jpg) 
 
 
+---------
+
+## Production Notes
+
+
+### `npm run deploy`
+
+Builds the app for production to the `build` folder.\ - and commits the changes to the gh-pages branch.
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
 
