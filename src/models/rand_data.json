@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Taylor",
+        "address": "123 fake st",
+        "email": "tyler@fake.com",
+        "phone": "801-555-5555",
+        "notes": "I am a note1"
+    },
+    {
+        "id": 2,
+        "name": "Dee",
+        "address": "321 yake st",
+        "email": "dee@fake.com",
+        "phone": "801-555-5555",
+        "notes": "I am a note2"
+    },
+    {
+        "id": 3,
+        "name": "John",
+        "address": "123 avenue st",
+        "email": "john@fake.com",
+        "phone": "801-555-5555",
+        "notes": "I am a note3"
+    },
+    {
+        "id": 4,
+        "name": "Vatalik",
+        "address": "fake 123 st",
+        "email": "tyler@fake.com",
+        "phone": "801-555-5555",
+        "notes": "I am a note4"
+    },
+    {
+        "id": 6,
+        "name": "Tyler Durden",
+        "address": "paper st",
+        "email": "tyler@fake.com",
+        "phone": "801-555-5555",
+        "notes": "I am a note5"
+    },
+    {
+        "id": 7,
+        "name": "Satoshi",
+        "address": "penny avenue",
+        "email": "stacksats@fake.com",
+        "phone": "801-555-5555",
+        "notes": "Never Sell!"
+    }
+]
