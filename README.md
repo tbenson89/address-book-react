@@ -10,7 +10,7 @@
 
 The project is to develop a SPA - Address/Contact Book, using GIT nad Github as Version Control. Typescript for JS that scales. 
 
-we have been using TFS/Azure environments a lot so it took us a couple commits to *git* back in the groove. There is no backend. but if we have time we will add a cache and empty cache feature to save some of the data. 
+I've have been using TFS/Azure environments a lot so it took me a couple commits to *git* back in the groove. There is no backend. but if we have time we will add a cache and empty cache feature to save some of the data. 
 
 
  ### Feature Requirements: 
@@ -36,12 +36,35 @@ Navigate to [`http://localhost:3000`](http://localhost:3000)
 
 -----
 
+## Design N Layout #1
+
+![dev001 Image 1](https://media.discordapp.net/attachments/703574209904771162/983173210403143701/unknown.png?width=950&height=676)
+
+
+## Todo's 
+
+- redesign clean up - I'd like the add contact form either in the left column or as a modal
+- Figure out where / what to do with the filter email btn!
+- Style the Edit / Delete buttons 
+- add social links
+- Responsive Design! 
+- add jDOCS above FN's 
+- Build ENV for Production Deploy
+- Either host project: 
+    - on our server https://slmodd.com
+    - git pages
+    - https://vercel.com/ free tier.
+
+----------
+
+
 ## roughROUGH Quick Layout Mockups
 
 ![mock image 1](https://media.discordapp.net/attachments/703574209904771162/982770344387567706/20220604_161743.jpg?width=1059&height=676) 
 ![mock image 2](https://cdn.discordapp.com/attachments/703574209904771162/982770344676966430/20220604_161802.jpg) 
 
-----------
+
+---------
 
 ## Production Notes
 

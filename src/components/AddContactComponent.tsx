@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import './AddContact.css'; // TODO: update casing - add-contact.css
+import './add-contact.css';
 
 interface Props {
     contact: string,
@@ -38,7 +38,6 @@ const AddContactComponent: React.FC<Props> = ({
                     phoneInputRef.current?.blur();
                     notesInputRef.current?.blur();
                 }}>
-                {/* <h2>Do you want to add a new contact?</h2> */}
                 <input 
                     ref={contactInputRef}
                     type="input" 

@@ -1,13 +1,14 @@
 @import url('../App.css'); /* Bring Global styling :) */
 
+
 /* Add shadows to create the "card" effect */
 .contact-card { 
-    /* background-color: #E2E5E37A; */
+    background-color: #1b2530b8;
     width: 45%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
     margin-bottom: 2em;
     
-    background-color: #1b2530b8;
+    /* background-color: #E2E5E37A; */
     /* background-color: #1b253088; */
 }
 
@@ -16,8 +17,6 @@
 
 .contact-item { 
     padding: 10px 0; 
-    
-    /* Note: RMV color: white IF you change contact-card bg color back! */
     color: white;
 }
 
@@ -31,9 +30,9 @@ input[class="contact-edit-txt"] {
 
 .contact-edit-txt:focus { outline: none; }
 
+
 /* Card Buttons */
 
-/* TODO: add the class names and color theme the edit/deletes */
 .card-btn-box button {
     cursor: pointer;
     border-radius: 0;
@@ -49,5 +48,9 @@ input[class="contact-edit-txt"] {
     display: inline-flex;
     vertical-align: sub;
 }
+
+/* TODO: add the class names and color theme the edit/deletes */
+
+/* HERE GOES THE EDIT and DELETE STYLES! */
 
 

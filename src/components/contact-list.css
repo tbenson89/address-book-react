@@ -34,8 +34,6 @@
 }
 .search-input:focus { outline: none; }
 
-
-/* TODO: COde cvlean up dlt me : ?  */
 .search-btn {
     position: absolute;
     width: 40px;

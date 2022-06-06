@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { TbUserSearch } from 'react-icons/tb';
 import SeedData from '../models/rand_data.json'; // deprecated: dummy data to display on first page load()
 import { ContactModel } from '../models/contactModel';
-import './ContactList.css'; // TODO: update casing - contact-list.css
+import './contact-list.css';
 import ContactItemComponent from './ContactItemComponent';
 
 interface Props {
@@ -12,7 +12,16 @@ interface Props {
 
 const ContactListComponent: React.FC<Props> = ({ contacts, setContacts }) => {
 
-    const [query, setQuery] = useState("");
+    const [ query, setQuery ] = useState("");
+
+    /* Sort Contacts by Email */
+    const filterContactsByEmail = (e: React.MouseEvent) => {
+        e.preventDefault();
+        const sortedContacts = [...contacts].sort((a,b) => {
+            return a.email > b.email ? 1 : -1;
+        });
+        setContacts(sortedContacts);
+    }
 
     return (
         <div className="flex-cards content-space">
@@ -28,11 +37,15 @@ const ContactListComponent: React.FC<Props> = ({ contacts, setContacts }) => {
                         <TbUserSearch />
                     </button>
                 </div>
-                {/* TOOD: probably going to just have sort order logic. then maybe add sort ascending / descending later if time */}
-                <div hidden>
-                    {/* <div className="filter-btn">
-                        <button>filter Contacts</button>
-                    </div> */}
+                {/* TOOD: how do we go back? to abc names ? hmmm  */}
+                {/* TOOD: style up the button to work where it is? */}
+                <div>
+                    <div className="filter-btn">
+                        <button onClick={(e) => {
+                            filterContactsByEmail(e);
+                        }}>filter Contacts by Email</button>
+                        {/* <button onClick={filterContactsByEmail}>filter Contacts by Email</button> */}
+                    </div>
                 </div>
             </div>
             {
