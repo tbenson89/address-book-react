@@ -1,9 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ContactModel } from '../models/contactModel';
 import './contact-item.css';
 import { FiEdit3 } from 'react-icons/fi';
 import { RiDeleteBack2Fill } from 'react-icons/ri';
-
 
 interface Props {
     contact: ContactModel;
@@ -21,7 +20,7 @@ const ContactItemComponent: React.FC<Props> = ({ contact, contacts, setContacts 
     const [ editContactPhone, setEditContactPhone ] = useState<string>(contact.phone);
     const [ editContactNotes, setEditContactNotes ] = useState<string>(contact.notes);
 
-    /* Handler FN's SET UPDATE DELETE */
+    /* Handler FN's SET UPDATE & DELETE */
     const editContact = (e: React.FormEvent, id: number | string) => {
         e.preventDefault();
         setContacts(contacts.map((contact) => (
@@ -32,12 +31,19 @@ const ContactItemComponent: React.FC<Props> = ({ contact, contacts, setContacts 
         )));
         setIsEditMode(false); // REVERT edit mode back to false to update UI
     }
-
     const deleteContact = (id: string | number) => {
         if (window.confirm(`Are you sure you want to delete ${contact.name}'s contact info?`)) {
             setContacts(contacts.filter(contact => id !== contact.id));
         }
     }
+
+    /* onpage changes - render the contacts by ABC. */
+    useEffect(() => {
+        const sortedContacts = [...contacts].sort((a,b) => {
+            return a.name > b.name ? 1 : -1;
+        })
+        setContacts(sortedContacts);
+    }, []);
 
     return (
         <form className="contact-card content-space" key={contact.id} onSubmit={(e) => editContact(e, contact.id)}>

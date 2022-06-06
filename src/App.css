@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Neucha&display=swap');
 
+
 .App {
   overflow: hidden;
   width: 100%;
@@ -10,18 +11,8 @@
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.header-box {
-  text-transform: uppercase;
-  font-size: 2em;
-  z-index: 1;
-  text-align: center;
-  padding: 10px !important;
-}
-@media (max-width: 767px) { .header-box { font-size: 1.25em; }}
-
 
 /* Global Styling */
-/* TODO: Move to assets/styles/<> */
 
 .text-center { text-align: center; }
 .content-space { padding: 1.75em 0; }
@@ -43,10 +34,10 @@
 	        box-shadow: 0 8px 6px -6px black;
 }
 
+
 /* show/hide stuffz */
 .hide-desktop.hide-tablet.show-mbl { display: none; }
 .show-desktop.show-tablet.hide-mbl { display: block; }
-
 @media (max-width: 600px) {
   /* hide text and show icon for mbl! */
   .hide-desktop.hide-tablet.show-mbl { display: block; }
@@ -55,7 +46,6 @@
 
 
 /* Layout Styles */
-/* TODO: Move to assets/styles/<> */
 
 .flex-row {
   margin: 0 !important;
@@ -86,19 +76,23 @@
 .flex-col:last-child {
   background-image: 
     url("https://media.discordapp.net/attachments/703574209904771162/982742070361985044/staqFI-official-logo-vector.png"), 
-    url('https://media.istockphoto.com/photos/notebook-paper-wrinkled-wide-rule-picture-id172217394?b=1&k=20&m=172217394&s=170667a&w=0&h=XKfdTRFH_EOWtUP57aUOb6nGhiDYXR6-xZbnK_a7jeI=');
-  background-size: 20%, 110%;
+    url('https://cdn.discordapp.com/attachments/703574209904771162/983442146994556958/20220606_124737.jpg');
+  background-size: 20%, cover;
   background-repeat: no-repeat;
   background-position: 75%, center;
   background-attachment: fixed, scroll;
 }
 
 
-/* TODO: After final decision remove the below! */
-/* .flex-module:last-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  min-height: 15vw !important;
-} */
+.header-box {
+  text-transform: uppercase;
+  font-size: 2em;
+  z-index: 1;
+  text-align: center;
+  padding: 10px !important;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 767px) { .header-box { font-size: 1.25em; } }
