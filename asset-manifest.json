@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/address-book-react/static/css/main.9361aa5a.css",
+    "main.js": "/address-book-react/static/js/main.d1253a7b.js",
+    "index.html": "/address-book-react/index.html",
+    "main.9361aa5a.css.map": "/address-book-react/static/css/main.9361aa5a.css.map",
+    "main.d1253a7b.js.map": "/address-book-react/static/js/main.d1253a7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9361aa5a.css",
+    "static/js/main.d1253a7b.js"
+  ]
+}
