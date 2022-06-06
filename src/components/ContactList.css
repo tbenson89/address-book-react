@@ -1,0 +1,62 @@
+@import url('../App.css'); /* Bring Global styling :) */
+
+
+.flex-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/* Search Bar Styling */
+
+.search-container {
+    display: inline-block;
+    width: 85%;
+    text-align: center;
+}
+
+.search-box { 
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+ }
+.search-input {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+}
+.search-input:focus { outline: none; }
+
+
+/* TODO: COde cvlean up dlt me : ?  */
+.search-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 50px;
+    right: 0px;
+    border: none;
+    font-size: 20px;
+    background-color: #2C6380;
+    color: white;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+.search-btn:hover { background-color: #2f74c0; }
+.search-btn:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px black;
+}
+
+
+
+
