@@ -35,6 +35,22 @@
 }
 
 
+/* Button Widgets */
+
+.theme-edit-btn { background-color: #1C1F23; }
+.theme-edit-btn:hover { 
+  /* TODO: come back and add hover styles */
+ }
+
+.theme-dlt-btn {
+  background-color: #DC3545;
+  border: 1px solid #DC3545 !important;
+}
+.theme-dlt-btn:hover { 
+  /* TODO: come back and add hover styles */
+ }
+
+
 /* show/hide stuffz */
 .hide-desktop.hide-tablet.show-mbl { display: none; }
 .show-desktop.show-tablet.hide-mbl { display: block; }
@@ -122,5 +138,5 @@
 
   .header-box { font-size: 0.75em; }
 
-  
+
 }

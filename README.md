@@ -40,21 +40,37 @@ Navigate to [`http://localhost:3000`](http://localhost:3000)
 
 ![dev001 Image 1](https://media.discordapp.net/attachments/703574209904771162/983173210403143701/unknown.png?width=950&height=676)
 
+### Layout #1 Tablet
+
+![dev001 Image 2 Tablet](https://media.discordapp.net/attachments/703574209904771162/983484708585341009/address-book-react-v3-tablet.png?width=298&height=676)
+
+### Layout #1 Mobile
+
+![dev001 Image 3 Mobile](https://media.discordapp.net/attachments/703574209904771162/983485599623295006/address-book-react-v3-mbl.png?width=156&height=676)
+
 
 ## Todo's 
 
-- Style the Edit / Delete buttons 
+- Write up message to Dee about assignment completion!
 - Social links
+- Fix Layout and Responsive Design for Chrome
+- Pull down the MASTER branch for Stage Build and Deploy
+- Build ENV for Production Deploy
+- Either host project: 
+    - git pages
+    - https://vercel.com/ free tier.
+    - ~~on our server https://slmodd.com~~
 - Figure out where / what to do with the filter email btn!
 - Add more Error handler and user prompts!
 - add jDOCS above FN's 
-- Build ENV for Production Deploy
-- Either host project: 
-    - on our server https://slmodd.com
-    - git pages
-    - https://vercel.com/ free tier.
 - redesign clean up - I'd like the add contact form either in the left column or as a modal
 - ~~Responsive Design!~~ === **DONE**
+- ~~Style the Edit / Delete buttons~~ === **DONE**
+
+## Bugs: 
+- BUG: Layout and sizing DOES NOT look good on chrome. Update and fix!
+- BUG: found a bug - when editing the first contact to put the email to Z and save then click "filter by email" 
+    - it does not filter the first edited contact in the list ? == weird I will go back over the sort N filter logic later for now I think it will work. 
 
 ----------
 
