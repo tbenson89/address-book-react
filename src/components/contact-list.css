@@ -56,5 +56,10 @@
 }
 
 
+/* Responsive Design */
 
+@media (max-width: 480px) {
+    
+    .flex-cards .search-container { padding-top: 2em; }
+}
 
