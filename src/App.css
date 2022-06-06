@@ -76,7 +76,7 @@
 .flex-col:last-child {
   background-image: 
     url("https://media.discordapp.net/attachments/703574209904771162/982742070361985044/staqFI-official-logo-vector.png"), 
-    url('https://cdn.discordapp.com/attachments/703574209904771162/983442146994556958/20220606_124737.jpg');
+    url('https://cdn.discordapp.com/attachments/703574209904771162/983445651130048602/20220606_130137.jpg');
   background-size: 20%, cover;
   background-repeat: no-repeat;
   background-position: 75%, center;
@@ -95,4 +95,32 @@
 
 /* Responsive Design */
 
+@media (max-width: 980px) {
+
+  .flex-row {
+    flex-direction: column-reverse;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .flex-row .flex-col { 
+    width: 100% !important; 
+    padding: unset !important;
+  }
+  .flex-col:first-child {
+    background-position: center;
+    height: 60vw;
+  }
+  .flex-col:last-child {
+    background-size: 50%, cover;
+    background-position: center;
+  }
+}
+
 @media (max-width: 767px) { .header-box { font-size: 1.25em; } }
+
+@media (max-width: 480px) {
+
+  .header-box { font-size: 0.75em; }
+
+  
+}

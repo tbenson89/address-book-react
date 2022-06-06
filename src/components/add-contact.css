@@ -24,9 +24,7 @@
     outline: none;
 }
 
-textarea.input-box {
-    width: 96.9%;
-}
+textarea.input-box { width: 96.9%; }
 
 .input-submit {
     cursor: pointer;
@@ -48,4 +46,31 @@ textarea.input-box {
 .input-submit:active {
     transform: scale(0.95);
     box-shadow: 0 0 5px black;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1600px) {
+
+    .input-container .input-contacts { width: 70%; }
+}
+
+@media (max-width: 980px) {
+
+    .input-container .input-contacts { width: 95%; }
+    .input-container .input-contacts 
+    textarea.input-box { width: 97.5%; }
+}
+
+@media (max-width: 480px) {
+    
+    .input-container .input-contacts { width: 90%; }
+    .input-container .input-contacts .input-box, 
+    .input-container .input-contacts textarea.input-box { width: 95%; }
+    .input-container .input-contacts .input-submit {
+        width: 100%;
+        float: unset;
+        margin-top: 2em;
+    }
 }

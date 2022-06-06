@@ -3,13 +3,10 @@
 
 /* Add shadows to create the "card" effect */
 .contact-card { 
-    background-color: #1b2530b8;
+    background-color: #1b25307a; /* #1b2530b8 */
     width: 45%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
     margin-bottom: 2em;
-    
-    /* background-color: #E2E5E37A; */
-    /* background-color: #1b253088; */
 }
 
 /* Add some padding inside the card container */
@@ -52,5 +49,29 @@ input[class="contact-edit-txt"] {
 /* TODO: add the class names and color theme the edit/deletes */
 
 /* HERE GOES THE EDIT and DELETE STYLES! */
+
+
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
+
+    .contact-card { 
+        width: 90%; 
+        margin-top: 2em;
+    }
+
+    .contact-card .card-container 
+    .card-btn-box { 
+        float: right; 
+        margin-bottom: 2em;
+    }
+
+    .contact-card .card-container 
+    .card-btn-box button:first-child 
+    { margin-right: 15px; }
+
+    
+}
 
 

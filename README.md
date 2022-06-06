@@ -43,17 +43,18 @@ Navigate to [`http://localhost:3000`](http://localhost:3000)
 
 ## Todo's 
 
-- redesign clean up - I'd like the add contact form either in the left column or as a modal
-- Figure out where / what to do with the filter email btn!
 - Style the Edit / Delete buttons 
-- add social links
-- Responsive Design! 
+- Social links
+- Figure out where / what to do with the filter email btn!
+- Add more Error handler and user prompts!
 - add jDOCS above FN's 
 - Build ENV for Production Deploy
 - Either host project: 
     - on our server https://slmodd.com
     - git pages
     - https://vercel.com/ free tier.
+- redesign clean up - I'd like the add contact form either in the left column or as a modal
+- ~~Responsive Design!~~ === **DONE**
 
 ----------
 
