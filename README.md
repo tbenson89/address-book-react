@@ -51,8 +51,8 @@ Navigate to [`http://localhost:3000`](http://localhost:3000)
 
 ## Todo's 
 
-- Write up message to Dee about assignment completion!
-- Social links
+- Social links - styling 
+- Add web3 connections 
 - Fix Layout and Responsive Design for Chrome
 - Figure out where / what to do with the filter email btn!
 - Add more Error handler and user prompts!
@@ -68,8 +68,13 @@ Navigate to [`http://localhost:3000`](http://localhost:3000)
 ## Bugs: 
 - BUG: Layout and sizing DOES NOT look good on chrome. Update and fix!
 - BUG: Fix deploy/build issues !
+    - src\components\ContactItemComponent.tsx Line 46:8:  React Hook useEffect has missing dependencies: 'contacts' and 'setContacts'. 
+    Either include them or remove the dependency array. If 'setContacts' changes too often, find the parent component that defines it and wrap that definition in useCallback  
+        - Just added an esLint disable-next line for react-hooks/exhaustive-deps for now! 
+    - Line 52:41:  Array.prototype.filter() expects a value to be returned at the end of arrow function | array-callback-return
+        - just added an esLint as well for now -disable-next-line array-callback-return
 - BUG: found a bug - when editing the first contact to put the email to Z and save then click "filter by email" 
-    - it does not filter the first edited contact in the list ? == weird I will go back over the sort N filter logic later for now I think it will work. 
+    - it does not filter the first edited contact in the list ? == weird I will go back over the sort N filter logic later for now I think it will work.
 
 ----------
 

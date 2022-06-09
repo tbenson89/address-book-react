@@ -1,0 +1,10 @@
+/* TODO: Add footer icon styles */
+.social-icon-group { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-links {
+    font-size: 1.5em;
+    color: #2C6380;
+}

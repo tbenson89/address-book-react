@@ -43,7 +43,8 @@ const ContactItemComponent: React.FC<Props> = ({ contact, contacts, setContacts 
             return a.name > b.name ? 1 : -1;
         })
         setContacts(sortedContacts);
-    }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [contact, setContacts]);
 
     return (
         <form className="contact-card content-space" key={contact.id} onSubmit={(e) => editContact(e, contact.id)}>
