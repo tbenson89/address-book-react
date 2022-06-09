@@ -49,6 +49,7 @@ const ContactListComponent: React.FC<Props> = ({ contacts, setContacts }) => {
                 </div>
             </div>
             {
+                // eslint-disable-next-line array-callback-return
                 contacts.filter(contact => {
                     if (query === '') {
                         return contact;
@@ -79,7 +80,7 @@ const ContactListComponent: React.FC<Props> = ({ contacts, setContacts }) => {
                             </p>
                         </div>
                     ) : (
-                        <h1 hidden></h1>
+                        <h1 hidden>&nbsp;</h1>
                     )
                 }
         </div>

@@ -42,6 +42,9 @@
   /* TODO: come back and add hover styles */
  }
 
+
+ /* Action-btns */
+
 .theme-dlt-btn {
   background-color: #DC3545;
   border: 1px solid #DC3545 !important;
@@ -79,6 +82,10 @@
   background-position: center;
   background-size: cover;
   width: 40%;
+}
+
+.flex-col:first-child .add-contact { 
+  height: 100%;
 }
 
 .flex-col {

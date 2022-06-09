@@ -5,6 +5,7 @@ import { ContactModel } from './models/contactModel';
 import './App.css';
 import AddContactComponent from './components/AddContactComponent';
 import ContactListComponent from './components/ContactListComponent';
+import ContactFooterComponent from './shared/ContactFooterComponent';
 
 const App: React.FC = () => {
 
@@ -14,11 +15,11 @@ const App: React.FC = () => {
   const [ phone, setPhone ] = useState<string>("");
   const [ notes, setNotes ] = useState<string>("");
   const [ contacts, setContacts ] = useState<ContactModel[]>([
-    { id: uuidv4(), name: "Vicky The Supervisor", address: "123 victoria st", email: "vicky@fake.com", phone: "8015552121", notes: "I am just random note1" },
-    { id: uuidv4(), name: "Sydney Disability Specialist", address: "123 squid st", email: "syd@fake.com", phone: "8015552121", notes: "I am just random note2" },
-    { id: uuidv4(), name: "Jon STAQ", address: "123 Jon st", email: "jon@fake.com", phone: "8015552121", notes: "I am just random note3" },
-    { id: uuidv4(), name: "Dee STAQ", address: "123 dee st", email: "dee@fake.com", phone: "8015552121", notes: "I am just random note4" },
-    { id: uuidv4(), name: "Tyler the Dev", address: "123 fake st", email: "tyler@fake.com", phone: "8015552121", notes: "I tyler the master developer!" },
+    { id: uuidv4(), name: "Victoria Disability Services LEAD", address: "123 victoria st", email: "vicky@utah.gov", phone: "8015552121", notes: "I am just random note1" },
+    { id: uuidv4(), name: "Sydney Disability Specialist", address: "123 squid st", email: "syd@utah.gov", phone: "8015552121", notes: "I am just random note2" },
+    { id: uuidv4(), name: "Jon STAQ", address: "123 Jon st", email: "jon@staqfi.com", phone: "8015552121", notes: "I am just random note3" },
+    { id: uuidv4(), name: "Dee STAQ", address: "123 dee st", email: "dee@staqfi.com", phone: "8015552121", notes: "I am just random note4" },
+    { id: uuidv4(), name: "Tyler the Dev", address: "123 fake st", email: "tyler@puretuned.com", phone: "8015552121", notes: "I am tyler the master developer!" },
   ]);
 
   /* Event Handler for submitting Changes - handle Add 
@@ -58,13 +59,13 @@ const App: React.FC = () => {
       {/* Section-3 -- Two columns = contact data / add contact? */}
       <div className="flex-row theme-bg-lite">
         <div className="flex-col content-space">
-          <div className="flex-module content-space">
+          <div className="flex-module content-space add-contact">
           {/* We can put the contact form here and style it as overlay :) */}
-          {/* <AddContactComponent 
-            contact={contact} setContact={setContact} addContact={addContact} 
-            address={address} setAddress={setAddress}  email={email} setEmail={setEmail} 
-            phone={phone} setPhone={setPhone} notes={notes} setNotes={setNotes}
-          /> */}
+            {/* <AddContactComponent 
+              contact={contact} setContact={setContact} addContact={addContact} 
+              address={address} setAddress={setAddress}  email={email} setEmail={setEmail} 
+              phone={phone} setPhone={setPhone} notes={notes} setNotes={setNotes}
+            /> */}
           </div>
         </div>
         <div className="flex-col content-space">
@@ -74,10 +75,8 @@ const App: React.FC = () => {
         </div>
       </div>
       
-      {/* Coming soon social link footer! */}
-      <p className='content-space theme-font-lite'>
-        <GiTechnoHeart /> Social Links <GiTechnoHeart />
-      </p>
+      {/* Section-4 WIP dynamic! social link footer! */}
+      <ContactFooterComponent />
     </div>
   );
 }
