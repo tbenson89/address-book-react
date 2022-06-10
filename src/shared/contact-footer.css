@@ -1,10 +1,27 @@
-/* TODO: Add footer icon styles */
+/* SOcial Icon Widgets */
+
 .social-icon-group { 
     display: flex;
     justify-content: space-between;
 }
 
 .social-links {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #2C6380;
+    cursor: pointer;
 }
+
+
+/* My Resume Styling widget */
+
+.resume-link-box svg { vertical-align: middle; }
+.resume-link-box .social-links {
+    color: #E2E5E3;
+    text-decoration: none;
+    font-size: 1.25em;
+    transition: all 2s ease;
+}
+.resume-link-box .social-links:hover { color: hsl(0, 100%, 50%); }
+
+
+

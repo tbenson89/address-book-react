@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { TbUserSearch } from 'react-icons/tb';
-import SeedData from '../models/rand_data.json'; // deprecated: dummy data to display on first page load()
+//// import SeedData from '../models/rand_data.json'; // deprecated: dummy data to display on first page load()
 import { ContactModel } from '../models/contactModel';
 import './contact-list.css';
 import ContactItemComponent from './ContactItemComponent';
