@@ -26,4 +26,4 @@ yarn-error.log*
 
 # Hide for now 
 src/components/web3
-src/App_REVERT.tsx
+src/App_Copy.tsx

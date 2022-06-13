@@ -15,11 +15,11 @@ const App: React.FC = () => {
   const [ phone, setPhone ] = useState<string>("");
   const [ notes, setNotes ] = useState<string>("");
   const [ contacts, setContacts ] = useState<ContactModel[]>([
-    { id: uuidv4(), name: "Victoria Disability Services LEAD", address: "123 victoria st", email: "vicky@utah.gov", phone: "8015552121", notes: "I am just random note1" },
-    { id: uuidv4(), name: "Sydney Disability Specialist", address: "123 squid st", email: "syd@utah.gov", phone: "8015552121", notes: "I am just random note2" },
-    { id: uuidv4(), name: "Jon STAQ", address: "123 Jon st", email: "jon@staqfi.com", phone: "8015552121", notes: "I am just random note3" },
-    { id: uuidv4(), name: "Dee STAQ", address: "123 dee st", email: "dee@staqfi.com", phone: "8015552121", notes: "I am just random note4" },
-    { id: uuidv4(), name: "Tyler the Dev", address: "123 fake st", email: "tyler@puretuned.com", phone: "8015552121", notes: "I am tyler the master developer!" },
+    { id: uuidv4(), name: "Victoria T", address: "123 victoria st", email: "vicky@utah.gov", phone: "8015552121", notes: "EZ - My Mommy is the Best" },
+    { id: uuidv4(), name: "Sydney B", address: "123 squid st", email: "syd@utah.gov", phone: "8015552121", notes: "Even easier - My sister is probably cooler than yours!" },
+    { id: uuidv4(), name: "Jonny S", address: "123 Sowards st", email: "jon@backwardgraphics.com", phone: "8015552121", notes: "Jonny is a great mentor of mine and an even better friend/brother!" },
+    { id: uuidv4(), name: "Cameron M", address: "123 Murray st", email: "camo@paychecks.com", phone: "8015552121", notes: "Camo is a great friend, an amazing developer and a very kind hearted person." },
+    // { id: uuidv4(), name: "Tyler B", address: "123 fake st", email: "tyler@puretuned.com", phone: "8015552121", notes: "I am tyler the master developer!" },
   ]);
 
   /* Event Handler for submitting Changes - handle Add 
@@ -50,22 +50,27 @@ const App: React.FC = () => {
       </div>
 
       {/* Section-2 -- inputs/hmmmm */}
-      <AddContactComponent 
+      {/* TODO: We need to move the search box fn out of AddContactComponent -> here! it's own SearchContactsComponent! */}
+      {/* TODO: THen after we are able to get that out we now have the form moved to the left column.  */}
+      {/* TODO: Afterwards we can add buttons by the search N sort top section for add a contact = Modal popup form!  */}
+      {/* <AddContactComponent 
         contact={contact} setContact={setContact} addContact={addContact} 
         address={address} setAddress={setAddress}  email={email} setEmail={setEmail} 
         phone={phone} setPhone={setPhone} notes={notes} setNotes={setNotes}
-      />
+      /> */}
 
       {/* Section-3 -- Two columns = contact data / add contact? */}
       <div className="flex-row theme-bg-lite">
         <div className="flex-col content-space">
           <div className="flex-module content-space add-contact">
-          {/* We can put the contact form here and style it as overlay :) */}
-            {/* <AddContactComponent 
+            <h2 className='contact-form-title theme-font-lite'>
+              Let's Add a Contact!  
+            </h2>
+            <AddContactComponent 
               contact={contact} setContact={setContact} addContact={addContact} 
               address={address} setAddress={setAddress}  email={email} setEmail={setEmail} 
               phone={phone} setPhone={setPhone} notes={notes} setNotes={setNotes}
-            /> */}
+            />
           </div>
         </div>
         <div className="flex-col content-space">
